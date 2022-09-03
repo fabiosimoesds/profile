@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <script src="https://kit.fontawesome.com/11ace9c1d4.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Welcome!</title>
 </head>
@@ -29,9 +30,20 @@
   <div class="body_divs about">
     <h2>About me</h2>
     <p><strong>Brazil</strong> is where I was born, but since <strong>jul/2016</strong> I`ve been living in
-      <strong>North Devon - UK</strong>. I`m on the
-      path to become a full stack <strong>Web Developer</strong> and I`m really enjoying ever moment and challange.
+      <strong>North Devon - UK</strong>. I`ve been studying coding for more than 9 months and for the last two months I`ve been focus on <strong>Web Development</strong> I really enjoying ever moment and challange.
     </p>
+  </div>
+  <hr>
+  <div class="body_divs">
+    <h2>Skills</h2>
+    <ul>
+      <li>Ruby</li>
+      <li>JavaScript</li>
+      <li>SQL</li>
+      <li>CSS 3</li>
+      <li>HTML 5</li>
+      <li>Rails</li>
+    </ul>
   </div>
   <hr>
   <div class="body_divs">
@@ -45,15 +57,44 @@
   </div>
   <hr>
   <div class="body_divs">
-    <h2 id="find-me">Find Me!</h2>
+    <h2>My Portifolio</h2>
     <ul>
-      <li><a href="https://www.instagram.com/fabio_simoess/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      </li>
-      <li><a href="https://www.linkedin.com/in/fabio-dos-santos-ab394950/" target="_blank"><i
-            class="fa-brands fa-linkedin"></i></a></li>
-      <li><a href="https://github.com/fabiosimoesds" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+      <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h3>Get Together</h3>
+            <p class="carousel-text">A social media to find <strong>Sport Buddies</strong></p>
+            <a href="http://www.get-together.me/users/9" target="_blank"><img src="images/gettogether_portifolio.PNG" class="d-block w-100" alt="..."></a>
+          </div>
+          <div class="carousel-item">
+            <h3>Gear Up</h3>
+            <p class="carousel-text">A Market place where you can rent <strong>Sports Gear</strong></p>
+            <a href="https://gear-up-renatojdc.herokuapp.com/" target="_blank"><img src="images/gearup_portifolio.PNG" class="d-block w-100" alt="..."></a>
+          </div>
+        </div>
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </ul>
   </div>
+
+    <footer>
+      <h2 id="find-me">Find Me!</h2>
+      <ul>
+        <li><a href="https://www.instagram.com/fabio_simoess/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li><a href="https://www.linkedin.com/in/fabio-dos-santos-ab394950/" target="_blank"><i
+              class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/fabiosimoesds" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+      </ul>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
