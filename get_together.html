@@ -4,10 +4,108 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <script src="https://kit.fontawesome.com/11ace9c1d4.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="portifolio.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get Together!</title>
 </head>
-<body>
-  <h1>Teste</h1>
+<body class="container portifolio-body">
+  <h1>Get Together</h1>
+  <div class="section">
+    <h2>App main goal</h2>
+    <p>Get Together is a Web Application designed to connect people who loves extreme sports. Have you ever travel to do any sport in your life? Have you ever been into a place that is the perfect place for a specific sport and had a great time there. Imagine if you could join this experience with the possibility to meet new people and share that particular moment with them, people who have the same objective as you, do the sport they love <br>
+      Get Together is here to fulfill this gap and connect you with the right buddy.
+    </p>
+  </div>
+
+  <div class="section">
+    <h3>Time to deliver the APP: 2 weeks</h3>
+    <h3>Hosted at Heroku: <a class="my_button" href="http://www.get-together.me/users/9">Get Together</a></h3>
+  </div>
+
+  <div class="section container">
+    <h2>User Stories</h2>
+      <ol class="user-story row">
+        <div class="col-sm-12 col-md-6">
+          <li class="user-item">As a User I can access the Landing Page</li>
+          <li class="user-item">As I user I can create a profile</li>
+          <li class="user-item">As I user I can upload my profile Picture and Banner</li>
+          <li class="user-item">As a User I can see my profile page</li>
+          <li class="user-item">As a User I can create my trip</li>
+          <li class="user-item">As a User I can see all my trips</li>
+          <li class="user-item">As a User I can filter a list of possible buddies through my trip</li>
+          <li class="user-item">As a User I can see Buddies profile</li>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <li class="user-item">As a User I can invite people to Get Together(Group Chat)</li>
+          <li class="user-item">As a User I can send and receive messages on the group via Live Chat</li>
+          <li class="user-item">As a User I can accept or reject a Group Invitation</li>
+          <li class="user-item">As a User I can see all my Chatrooms</li>
+          <li class="user-item">As a User I can see one of my Chatrooms</li>
+          <li class="user-item">As a User I can upload my trip pictures inside the Trip Album</li>
+          <li class="user-item">As a User I can delete a photo from the Trip Album</li>
+          <li class="user-item">As a User I can delete an album</li>
+        </div>
+      </ol>
+  </div>
+
+  <div class="section">
+    <h2>Main Features</h2>
+    <p>Everything related to User and User Authentication is done with Devise.</p>
+    <p>We use pundit to manage Authorization on Get Together.</p>
+    <p>Users can create a trip and Through that trip you can filter the buddies you can connect that will be in the same place, for the same sport at the same time.</p>
+    <div class='images-div'><img class="app-img" src="images/trip_card_gettogether.PNG" alt=""></div>
+
+    <p>Users can invite buddies to a chatroom so they can organize the details of the trip, the chatroom is live and handled with JavaScript</p>
+    <div class='images-div'><img class="app-img" src="images/chat_gettogether.PNG" alt=""></div>
+
+    <p>Users have a map with pins where you have been or where you are going next, done via MAPBOX API</p>
+    <div class='images-div'><img class="app-img" src="images/my_profile_gettogether.PNG" alt=""></div>
+
+    <p>Users see their own profile differently than they would see someone`s profile</p>
+    <div class='images-div'><img class="app-img" src="images/other_profile_gettogether.PNG" alt=""></div>
+
+    <p>Users can change their profile picture and banner</p>
+    <p>Users can change add and remove photos to the albums</p>
+    <p>Trip addresses are autocomplete, managed with the MAPBOX API again, we do that so we a certain we can get Longitute and Latitude from a certain address</p>
+    <p>A album is created everytime you create a Trip</p>
+    <p>The invitations are automatically created as soon as you create the chatroom, only the one who received or sent a invitation can join the Chatroom</p>
+  </div>
+
+
+  <div class="section">
+    <h2>Data Base and Schema</h2>
+    <p>The Data Base os managed with PostgreSQL, for photos we use Cloudinary. Below you can see the detailed Schema:</p>
+    <div class='images-div'><img class="app-img" src="images/schema_gettogether.PNG" alt=""></div>
+
+  </div>
+
+  <div class="section">
+    <h2>Project Management and Design</h2>
+    <p>We use Trello to Manage to project and the Design was made with Figma. For version management we use GIT and GITHUB</p>
+    <p>Trello:</p>
+    <div class='images-div'><img class="app-img" src="images/trello_gettogether.PNG" alt=""></div>
+
+    <p>Figma:</p>
+    <div class='images-div'><img class="app-img" src="images/figma_gettogether.PNG" alt=""></div>
+
+  </div>
+
+  <div class="section">
+    <h2>Challenges</h2>
+    <p>The main challange was to think and structure the Data Base, tables and association between them. After that it was to chose the Features that we wanted to be implemented on the 2 weeks time scale. We have an endless list of features that we would like to have, but we had to chose the most essential ones.</p>
+  </div>
+
+  <div class="section">
+    <h2>TO DOs</h2>
+    <p>Frontend is something that we need to improve a lot still, but we have been learning a lot with our mistakes. Make the WebApp tottally responsive is the main go, and improve the User Experience too.</p>
+    <p>We want to implement the Private Chat between users</p>
+    <p>We want to implement review on the Buddy trip</p>
+  </div>
+
 
 </body>
 </html>

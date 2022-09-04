@@ -22,8 +22,8 @@ body {
 .ruby-pic {
   width: 40px;
   position: relative;
-  bottom: -95px;
-  left: -2%;
+  bottom: -123px;
+  right: 15px;
 }
 
 .pic-shadow {
@@ -137,6 +137,7 @@ footer{
 h3{
   font-weight: bold;
 }
+
 
 
 
